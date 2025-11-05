@@ -16,13 +16,15 @@ const getBooks = () => {
         const booksSection = document.getElementById('books-section');
         booksSection.innerHTML += `
             <div id="card-col-${book.asin}" class="col">
-                <div class="card">
+                <div class="card h-100">
                     <img src="${book.img}" class="card-img-top" alt="book-preview">
                     <div class="card-body">
                         <h5 class="card-title">${book.title}</h5>
                         <p class="card-text">Price: ${book.price} $</p>
+                        <div>
                         <a href="#" onclick="toDiscard(event)" class="btn btn-warning">DISCARD</a>
                         <a href="#" onclick="toBuy(event)" class="btn btn-primary">BUY NOW</a>
+                        </div>
                     </div>
                 </div>
             </div>
