@@ -21,10 +21,8 @@ const getBooks = () => {
                     <div class="card-body">
                         <h5 class="card-title">${book.title}</h5>
                         <p class="card-text">Price: ${book.price} $</p>
-                        <div>
                         <a href="#" onclick="toDiscard(event)" class="btn btn-warning">DISCARD</a>
                         <a href="#" onclick="toBuy(event)" class="btn btn-primary">BUY NOW</a>
-                        </div>
                     </div>
                 </div>
             </div>
