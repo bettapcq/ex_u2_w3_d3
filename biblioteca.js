@@ -58,7 +58,7 @@ const toBuy = (e) => {
   const newLi = document.createElement('li');
   newLi.innerHTML = `
          <a class="dropdown-item" href="#">${title}</br>${price}</a>
-         <button type="button" class="btn btn-danger text-end"><i class="bi bi-trash"></i></button>
+         <button onclick="deleteFromCart(event)" type="button" class="btn btn-danger text-end"><i class="bi bi-trash"></i></button>
   `;
   cartList.insertBefore(newLi, endList);
 };
